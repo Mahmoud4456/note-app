@@ -22,7 +22,10 @@ class CustomBottomSheet extends StatelessWidget {
         builder: (BuildContext context, state) {
           return ModalProgressHUD(
               inAsyncCall: state is AddNoteLoading ? true : false,
-              child: const AddForm ()
+              child: const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+                child:  AddForm (),
+              )
           );
         },
         );
