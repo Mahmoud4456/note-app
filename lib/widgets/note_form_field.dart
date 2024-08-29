@@ -56,11 +56,12 @@ class _AddFormState extends State<AddForm> {
                 }else{
                   autovalidateMode= AutovalidateMode.always;
                 }
-                setState(() {});
+                //setState(() {});
               },
                 );
               }
             ),
+            const SizedBox(height: 25,),
           ],
         ),
       ),

@@ -11,6 +11,7 @@ class HomeView extends StatelessWidget {
     return  Scaffold(
       floatingActionButton:  FloatingActionButton(onPressed: (){
         showModalBottomSheet(
+          isScrollControlled: true,
           context: context,
             builder: (context) => const CustomBottomSheet(),
             shape: RoundedRectangleBorder(
