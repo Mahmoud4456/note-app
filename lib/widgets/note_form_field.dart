@@ -31,7 +31,8 @@ class _AddFormState extends State<AddForm> {
             children: [
               CustomTextField(hintText: "Title", onSaved: (value){
                 title = value ;
-              },),
+              },
+              ),
               const SizedBox(height: 15,),
               CustomTextField(hintText: "Content", maxLine: 5,
                 onSaved: (value){
