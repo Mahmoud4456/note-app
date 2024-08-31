@@ -7,6 +7,7 @@ import 'package:hive_test/views/home_view.dart';
 import 'conestanse.dart';
 
 void main() async{
+  Bloc.observer = twoObservrerBloc() ;
   Bloc.observer  =  SimpleObserverBloc();
   await Hive.initFlutter();
   Hive.registerAdapter(NoteModelAdapter());
